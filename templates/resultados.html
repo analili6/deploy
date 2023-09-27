@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados</title>
+</head>
+<body bgcolor="green">
+    <h1>Resultados del cálculo de la ruta:</h1>
+    <p>Maximo de Carga: {{ max_carga }}</p>
+    
+    <h2>Rutas:</h2>
+    <ul>
+        {% for ruta in rutas %}
+            <li>{{ ruta }}</li>
+        {% endfor %}
+    </ul>
+    
+    <p><a href="/">Volver al formulario</a></p>
+</body>
+</html>
